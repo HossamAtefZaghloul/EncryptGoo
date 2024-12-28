@@ -170,6 +170,11 @@ class FileController extends Controller
     
             if ($chunkCount === $totalChunks) {
                 \Log::info('All chunks for decryption received', ['fileName' => $fileName]);
+
+                $decryptedFolder = storage_path('app/decrypted');
+                if (!is_dir($decryptedFolder)) {
+                    mkdir($decryptedFolder, 0755, true);
+                }
     
                 $assembledFilePath = storage_path("app/decrypted/{$fileName}.assembled");
                 $assembledFile = fopen($assembledFilePath, 'wb');
