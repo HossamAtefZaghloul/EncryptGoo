@@ -41,3 +41,22 @@
 ### php artisan serve
 ### npm run dev
 
+## Make sure to add the type of files u want to encrypt here as needed
+### locate C:\xampp\htdocs\EncryptGoo\Myapp\app\Http\Controllers\FileController.php
+### line 235
+#### $mimeMap = [
+####   'image/jpeg' => 'jpg',
+####   'image/png' => 'png',
+####   'application/pdf' => 'pdf',
+####   'text/plain' => 'txt',
+####   'audio/mp3' => 'mp3',
+####   'audio/mp4' => 'mp4',
+####   'audio/mpeg' => 'mp3',
+####   'audio/wav' => 'wav',
+####   'audio/ogg' => 'oga',
+####   'video/mp4' => 'mp4',
+####   'application/x-msdownload' => 'exe',
+####   'application/x-dosexec' => 'exe',
+####   // Add other types as needed ........
+####    ];
+
