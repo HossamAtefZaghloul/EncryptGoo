@@ -2,6 +2,7 @@
 ## Clone the Project
 
 ## Install Dependencies :
+### cd myapp
 ### composer install
 ### npm install
 
